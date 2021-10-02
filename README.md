@@ -3,7 +3,7 @@
 To run this sample make sure you have Maven and Java installed.
 
 
-To build the JAR, ftype following command into your Cloud9 Instance terminal:
+To build the JAR, type following command into your Cloud9 Instance terminal:
 
 ```
 git clone https://github.com/aws-samples/aws-kcl-java
