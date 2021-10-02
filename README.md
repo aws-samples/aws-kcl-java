@@ -1,17 +1,25 @@
-## My Project
+# Amazon KCL Sample Implementation
 
-TODO: Fill this README out!
+To run this sample make sure you have Maven and Java installed.
 
-Be sure to:
 
-* Change the title in this README
-* Edit your repository description on GitHub
+To build the JAR, ftype following command into your Cloud9 Instance terminal:
 
-## Security
+```
+git clone https://github.com/aws-samples/aws-kcl-java
+cd aws-kcl-java/kcl-app
+mvn clean compile assembly:single
+```
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+Set 3 environment variables:
 
-## License
+```
+export STREAM_NAME=<YOUR_KINESIS_STREAM_NAME>
+export AWS_REGION=<AWS_REGION>
+export APPLICATION_NAME=<APPLICATION_NAME_FOR_CONSUMER>
+```
+Run the application by using:
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+`java -jar target/kcl-app-1.0-SNAPSHOT-jar-with-dependencies.jar`
+
 
